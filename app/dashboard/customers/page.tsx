@@ -1,3 +1,12 @@
+import Breadcrumbs from '@/app/ui/invoices/breadcrumbs'
+
 export default function Page() {
-  return <p>Customers Page</p>
+  return (
+    <Breadcrumbs
+      breadcrumbs={[
+        { label: 'Dashboard', href: '/dashboard' },
+        { label: 'Customers', href: '/dashboard/customers', active: true },
+      ]}
+    />
+  )
 }
